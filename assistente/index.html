@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Reconhecedor de vídeo</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="materialize.js"></script>
+	<script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbdqlVKVg43U2hOyYNqnQ5c5_0p8A1uf8&callback=initMap"></script>
+	<script type="text/javascript" src="index.js"></script>
+</script>
+	<link rel="stylesheet" type="text/css" href="materialize.css">
+</head>
+<body>
+
+	<button class="btn waves-effect waves-light">Iniciar</button>
+
+	<ul class="collection with-header">
+		<li class="collection-header"><h5>Comandos aplicados</h5></li>
+	</ul>
+
+
+    <div id="modal1" class="modal">
+	    <div class="modal-content">
+	      <h4>Dados sobre seu IP</h4>
+	      <p class="ipAdd"></p>
+	      <p class="ipPais"></p>
+	      <p class="ipRegiao"></p>
+	      <p class="ipCidade"></p>
+	      <p class="ipProv"></p>
+	    </div>
+	    <div class="modal-footer">
+	      <a class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
+	    </div>
+    </div>
+
+    <div id="modal2" class="modal">
+    	<div class="modal-content">
+    		<h4>Sua localização</h4>
+    		<div id="map"></div>
+    	</div>
+    	<div class="modal-footer">
+    		<a class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
+    	</div>
+    </div>
+	
+</body>
+</html>
+
+<style type="text/css">
+
+	#modal2{
+		width: 60% !important;
+		height: 100% !important;
+		margin: 0 auto;
+		margin-top: 1% !important;
+	}
+
+	#map{
+		height: 400px;
+		width: 98%;
+		margin: 1%;
+	}
+
+</style>
